@@ -1,4 +1,4 @@
-<?php namespace Grrr\PowerUser;
+<?php namespace GrrrAmsterdam\PowerUser;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -30,9 +30,15 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-        $this->registerConsoleCommand('theme.require', 'Grrr\PowerUser\Console\ThemeRequire');
-        $this->registerConsoleCommand('plugin.list', 'Grrr\PowerUser\Console\PluginList');
-        $this->registerConsoleCommand('admin.create', 'Grrr\PowerUser\Console\AdminCreate');
+        $this->registerConsoleCommand(
+            'theme.require', 'GrrrAmsterdam\PowerUser\Console\ThemeRequire'
+        );
+        $this->registerConsoleCommand(
+            'plugin.list', 'GrrrAmsterdam\PowerUser\Console\PluginList'
+        );
+        $this->registerConsoleCommand(
+            'admin.create', 'GrrrAmsterdam\PowerUser\Console\AdminCreate'
+        );
     }
 
 }

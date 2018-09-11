@@ -1,9 +1,9 @@
 <?php
-namespace Grrr\PowerUser\Tests\Classes;
+namespace GrrrAmsterdam\PowerUser\Tests\Classes;
 
 use Cms\Classes\Theme;
-use Grrr\PowerUser\Classes\ThemeConfig;
-use Grrr\PowerUser\Tests\PluginTestCase;
+use GrrrAmsterdam\PowerUser\Classes\ThemeConfig;
+use GrrrAmsterdam\PowerUser\Tests\PluginTestCase;
 
 class ThemeConfigTest extends PluginTestCase {
 

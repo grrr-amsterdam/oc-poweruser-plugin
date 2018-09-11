@@ -1,5 +1,5 @@
 <?php
-namespace Grrr\PowerUser\Classes;
+namespace GrrrAmsterdam\PowerUser\Classes;
 
 use Illuminate\Database\Eloquent\Factory as ModelFactory;
 

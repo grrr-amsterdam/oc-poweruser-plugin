@@ -1,7 +1,7 @@
 <?php
-namespace Grrr\PowerUser\Traits;
+namespace GrrrAmsterdam\PowerUser\Traits;
 
-use Grrr\PowerUser\Classes\Database\QueryBuilder;
+use GrrrAmsterdam\PowerUser\Classes\Database\QueryBuilder;
 
 trait Rememberable {
 

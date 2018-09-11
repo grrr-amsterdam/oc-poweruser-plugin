@@ -1,5 +1,5 @@
 <?php
-namespace Grrr\PowerUser\Tests;
+namespace GrrrAmsterdam\PowerUser\Tests;
 
 use PluginTestCase as PluginTestCaseBase;
 use System\Classes\PluginManager;

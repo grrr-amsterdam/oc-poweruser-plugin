@@ -1,5 +1,5 @@
 <?php
-namespace Grrr\PowerUser\Classes;
+namespace GrrrAmsterdam\PowerUser\Classes;
 
 use File;
 use Cms\Classes\Theme;

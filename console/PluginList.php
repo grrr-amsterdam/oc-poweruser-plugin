@@ -1,4 +1,4 @@
-<?php namespace Grrr\PowerUser\Console;
+<?php namespace GrrrAmsterdam\PowerUser\Console;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
