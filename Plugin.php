@@ -17,7 +17,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'PowerUser',
-            'description' => 'A collection of console commands allowing greater automation.',
+            'description' => 'A collection of core utils we use in our OctoberCMS projects',
             'author'      => 'Grrr',
             'icon'        => 'icon-battery-full'
         ];
@@ -35,68 +35,4 @@ class Plugin extends PluginBase
         $this->registerConsoleCommand('admin.create', 'Grrr\PowerUser\Console\AdminCreate');
     }
 
-    /**
-     * Boot method, called right before the request route.
-     *
-     * @return array
-     */
-    public function boot()
-    {
-
-    }
-
-    /**
-     * Registers any front-end components implemented in this plugin.
-     *
-     * @return array
-     */
-    public function registerComponents()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'Grrr\PowerUser\Components\MyComponent' => 'myComponent',
-        ];
-    }
-
-    /**
-     * Registers any back-end permissions used by this plugin.
-     *
-     * @return array
-     */
-    public function registerPermissions()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'grrr.poweruser.some_permission' => [
-                'tab' => 'PowerUser',
-                'label' => 'Some permission'
-            ],
-        ];
-    }
-
-    /**
-     * Registers back-end navigation items for this plugin.
-     *
-     * @return array
-     */
-    public function registerNavigation()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'poweruser' => [
-                'label'       => 'PowerUser',
-                'url'         => Backend::url('grrr/poweruser/mycontroller'),
-                'icon'        => 'icon-leaf',
-                'permissions' => ['grrr.poweruser.*'],
-                'order'       => 500,
-            ],
-        ];
-    }
-
-    public function registerSchedule($schedule) {
-        $schedule->command('queue:work --once --tries=3 --timeout=120')->withoutOverlapping();
-    }
 }
