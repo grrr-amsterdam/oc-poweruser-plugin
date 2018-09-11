@@ -1,0 +1,22 @@
+{
+    "name": "grrr-amsterdam/oc-poweruser-plugin",
+    "description": "OctoberCMS Plugin with a collection of some core feature we use for our projects.",
+    "type": "october-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harmen Janssen",
+            "email": "harmen@grrr.nl"
+        },
+        {
+            "name": "Ramiro Hammen",
+            "email": "ramiro@grrr.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0"
+    }
+}
