@@ -1,5 +1,5 @@
 <?php
-namespace GrrrAmsterdan\PowerUser\Classes\Database;
+namespace GrrrAmsterdam\PowerUser\Classes\Database;
 
 use App;
 use October\Rain\Database\QueryBuilder as Builder;
