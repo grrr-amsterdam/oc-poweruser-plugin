@@ -11,6 +11,10 @@ class PluginTestCase extends PluginTestCaseBase {
     public function setUp() {
         parent::setUp();
 
+        if (config('database.default') == 'sqlite') {
+            app()->make('db')->connection()->getPdo()->exec('pragma foreign_keys=1');
+        }
+
         $pluginManager = PluginManager::instance();
         $pluginManager->registerAll(true);
         $pluginManager->bootAll(true);
