@@ -17,7 +17,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.0",
-        "composer/installers": "dev-master",
+        "composer/installers": "~1.0",
         "grrr-amsterdam/garp-functional": "^4.0"
     },
     "autoload": {
