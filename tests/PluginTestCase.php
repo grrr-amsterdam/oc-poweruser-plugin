@@ -8,7 +8,8 @@ class PluginTestCase extends PluginTestCaseBase {
 
     protected $modelFactories = [];
 
-    public function setUp() {
+    public function setUp(): void
+    {
         parent::setUp();
 
         if (config('database.default') == 'sqlite') {
@@ -22,14 +23,16 @@ class PluginTestCase extends PluginTestCaseBase {
         $this->loadModelFactories($pluginManager);
     }
 
-    public function tearDown() {
+    public function tearDown(): void
+    {
         parent::tearDown();
 
         $pluginManager = PluginManager::instance();
         $pluginManager->unregisterAll();
     }
 
-    protected function loadModelFactories(PluginManager $pluginManager) {
+    protected function loadModelFactories(PluginManager $pluginManager): void
+    {
         array_map(function($identifier) use ($pluginManager) {
             $pluginManager->findByIdentifier($identifier)
                 ->makeFactories($this->app);
