@@ -7,7 +7,7 @@ use GrrrAmsterdam\PowerUser\Tests\PluginTestCase;
 
 class ThemeConfigTest extends PluginTestCase {
 
-    public function setUp() {
+    public function setUp(): void {
         parent::setUp();
         app()->setThemesPath(__DIR__ . '/../fixtures/themes');
 
