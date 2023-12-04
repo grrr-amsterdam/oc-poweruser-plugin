@@ -1,7 +1,7 @@
 <?php
 namespace GrrrAmsterdam\PowerUser\Classes;
 
-use Illuminate\Database\Eloquent\Factory as ModelFactory;
+use Illuminate\Database\Eloquent\Factories\Factory as ModelFactory;
 
 class PluginBase extends \System\Classes\PluginBase {
 
